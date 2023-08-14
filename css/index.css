@@ -178,3 +178,92 @@ header{
     background-color: var(--primary-900);
     color: var(--dark-font-solid);
 }
+
+/* Titulo de los Productos */
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container__contentTitulo{    
+    
+}
+
+.main-container__titulo{
+    background-color: var(--secondary-500);
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 900;
+    color: var(--light-font-solid);
+    text-align: center; 
+}
+
+/* Collections */
+
+.collection{
+   display: grid; 
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center; 
+}
+
+.collection:nth-child(3) .collection__cover{
+    order:-1;
+}
+
+.collection__content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-24);
+    align-items: start;
+    background-color: var(--dark-bg-solid);
+    padding: 50px;
+}
+
+.collection__title{
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 500;
+    color:var(--primary-solid);
+    text-align: center;
+}
+
+.collection__text{
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 300;
+    color:var(--light-font-solid);
+}
+.collection__presentacion{
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 900;
+    color:var(--primary-solid);
+}
+
+.collection__link{
+    display: inline-block;/*por default tiene inline y no toma entonces los padding y margins*/
+    font-size: var(--font-medium);
+    font-weight: 500;
+    background-color: var(--dark-bg-solid);
+    color: var(--primary-solid);
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--primary-solid);
+    padding: var(--spacing-12) var(--spacing-68);
+    align-self: center;   
+    transition: all .3s ease-in-out;
+}
+
+.collection__link:hover{    
+    background-color: var(--primary-900);
+    color: var(--dark-font-solid);
+}
+
+.collection__cover{
+    max-width: 600px;
+    align-self: stretch;
+}
+
+.collection__cover img{
+    max-width: 600px;    
+}
