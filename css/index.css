@@ -23,6 +23,7 @@
 
     /* Font-sizes */
     --font-display:  4.6em;
+    --font-jumbo:    3.8em;
     --font-xlarge:   3em;
     --font-large:    2.4em;    
     --font-medium:   1.8em;
@@ -91,7 +92,7 @@ header{
     font-family: var(--alternative-font);
     background-color: var(--secondary-bg-solid);
     color: var(--light-font-solid);
-    padding: var(--spacing-28);
+    padding: var(--spacing-28);    
 }
 
 .navbar{
@@ -119,4 +120,61 @@ header{
 
 .navbar__link:hover{    
     background-color: var(--primary-900);
+}
+
+/* HERO se la conoce así a la seccion del Banner*/ 
+
+.hero {
+    background-image: url('./../img/Central/imagenCentral.png');
+    padding: var(--spacing-128);
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-20);
+    align-items: start; /*por default toman strech*/
+
+    grid-column: 4 / 6;
+    grid-row: 1;    
+}
+
+.hero__title {
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+    color: var(--light-font-solid);    
+    align-self: center;   
+
+}
+
+.hero__text{
+    font-family: var(--alternative-font);
+    font-size: var(--font-medium);
+    font-weight: 700;
+    color: var(--light-font-solid);
+    text-align: justify;
+}
+
+.hero__link{
+    display: inline-block;/*por default tiene inline y no toma entonces los padding y margins*/
+    font-size: var(--font-medium);
+    font-weight: 500;
+    background-color: var(--secondary-bg-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-12) var(--spacing-68);
+    border-radius: 50px;
+    align-self: center;   
+    transition: all .3s ease-in-out;
+}
+
+.hero__link:hover{    
+    background-color: var(--primary-900);
+    color: var(--dark-font-solid);
 }
