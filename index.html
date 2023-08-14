@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Humaya</title>
 </head>
 <body>
+    <!-- utilizacion de nomenclatura BEM 
+        Block
+        Element
+        Modifier 
+    -->    
     <header>
-        <nav>
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
                 <a href="./index.html">
                     <img src="./img/Logo/LogoHumaya100x100.png" alt="isologotipo de la marca Humaya">
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="">Home</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="">Home</a>
                 </li>
-                <li>
-                    <a href="">Productos</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="">Productos</a>
                 </li>
-                <li>
-                    <a href="">Locales</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="">Locales</a>
                 </li>
-                <li>
-                    <a href="">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="">
                         <iconify-icon icon="ic:baseline-connect-without-contact" style="color: white;"></iconify-icon>
                         Contacto
                     </a>
@@ -173,53 +179,61 @@
                 </li>
                 <li>
                     <h4>MEN&Uacute;</h4>
-                    <ul>
-                        <li>
-                            <a href="">Home</a>
-                        </li>
-                        <li>
-                            <a href="">Productos</a>
-                        </li>
-                        <li>
-                            <a href="">Locales</a>
-                        </li>
-                        <li>
-                            <a href="">Contactos</a>
-                        </li>
-                    </ul>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Productos</a>
+                            </li>
+                            <li>
+                                <a href="">Locales</a>
+                            </li>
+                            <li>
+                                <a href="">Contactos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
                 </li>
 
                 <li>
                     <h4>NAVEGACI&Oacute;N</h4>
-                    <ul>
-                        <li>
-                            <a href="">Preguntas Frecuentes</a>
-                        </li>
-                        <li>
-                            <a href="">Distribuidores</a>
-                        </li>
-                        <li>
-                            <a href="">Prensa</a>
-                        </li>
-                        <li>
-                            <a href="">Recetas exclusivas</a>
-                        </li>
-                    </ul>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">Preguntas Frecuentes</a>
+                            </li>
+                            <li>
+                                <a href="">Distribuidores</a>
+                            </li>
+                            <li>
+                                <a href="">Prensa</a>
+                            </li>
+                            <li>
+                                <a href="">Recetas exclusivas</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
                 </li>
 
                 <li>
                     <h4>REDES</h4>
-                    <ul>
-                        <li>
-                            <a href="#"><iconify-icon icon="mdi:instagram" style="color: white;"></iconify-icon></a>
-                        </li>
-                        <li>
-                            <a href="#"><iconify-icon icon="ant-design:facebook-outlined" style="color: white;"></iconify-icon></a>
-                        </li>
-                        <li>
-                            <a href="#"><iconify-icon icon="iconoir:tiktok" style="color: white;"></iconify-icon></a>
-                        </li>
-                    </ul>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#"><iconify-icon icon="mdi:instagram" style="color: white;"></iconify-icon></a>
+                            </li>
+                            <li>
+                                <a href="#"><iconify-icon icon="ant-design:facebook-outlined" style="color: white;"></iconify-icon></a>
+                            </li>
+                            <li>
+                                <a href="#"><iconify-icon icon="iconoir:tiktok" style="color: white;"></iconify-icon></a>
+                            </li>
+                        </ul>
+                    </nav>
                 </li>
                 <li>
                     <h4>UBICACI&Oacute;N</h4>
