@@ -1,0 +1,18 @@
+
+
+
+header{
+    font-family: var(--alternative-font);
+    background-color: var(--secondary-bg-solid);
+    /* color: var(--light-font-solid) !important; */
+}
+
+
+.navbar__link{    
+    color: var(--primary-900); 
+    font-weight: 700;
+}
+
+.navbar__link:hover{
+    background-color: var(--primary-900);
+}

@@ -3,257 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <link href="./css/index.css" rel="stylesheet">
+    <link href="./css/header.css" rel="stylesheet">
+    <link href="./css/banner.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/productos.css" rel="stylesheet">
+    <link href="./css/conctactos.css" rel="stylesheet">
+
     <title>Humaya</title>
 </head>
 <body>
-    <!-- utilizacion de nomenclatura BEM 
-        Block
-        Element
-        Modifier 
-    -->    
-    <header>
-        <nav class="navbar container">
-            <picture class="navbar__logo">
-                <a href="./index.html">
-                    <img src="./img/Logo/LogoHumaya100x100.png" alt="isologotipo de la marca Humaya">
-                </a>
-            </picture>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a class="navbar__link" href="">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="">Productos</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="">Locales</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="">
-                        <iconify-icon icon="ic:baseline-connect-without-contact" style="color: white;"></iconify-icon>
-                        Contacto
+
+    <header>        
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid d-flex justify-content-between  align-items-center"> 
+                
+                <div>
+                    <a class="navbar-brand" href="./index.html">
+                        <picture class="navbar__logo">
+                            <img src="./img/Logo/LogoHumaya100x100.png" alt="isologotipo de la marca Humaya">
+                        </picture>
                     </a>
-                </li>
-            </ul>
+                </div>             
+
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link navbar__link" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link navbar__link" href="#Productos">Productos</a>
+                            <a class="nav-link navbar__link" href="#Locales">Locales</a>
+                            <a class="nav-link navbar__link" href="#Contactos">Contactos</a>                  
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
+
+        <section class="container-fluid banner d-flex justify-content-end">            
+            <article class="banner__content">
+                <h2 class="banner__title">DULCES DEL ALMA</h2>
+                <p class="banner__text">Los productos HUMAYA son elaborados desde hacem&aacute;s de 50 años
+                   fiel a las tradiciones familiares y sabores caseros, acompañ&aacute;ndote 
+                   en los momentos m&aacute;s importantes de la vida.
+                </p>
+                <a class="banner__link" href="">CONOCENOS</a>
+            </article>
+        </section>
     </header>
 
-    <section class="hero container">
-        <article class="hero__content container">
-            <h2 class="hero__title">DULCES DEL ALMA</h2>
-            <p class="hero__text">Los productos HUMAYA son elaborados desde hacem&aacute;s de 50 años
-               fiel a las tradiciones familiares y sabores caseros, acompañ&aacute;ndote 
-               en los momentos m&aacute;s importantes de la vida.
-            </p>
-            <a class="hero__link" href="">CONOCENOS</a>
-        </article>
-    </section>
+    <main class="container-fluid  main-container">
+               
+        <p class="main-container__titulo">
+            Productos
+        </p>
 
-    <main class="main-container container">
-        <div class="main-container__contentTitulo">
+        <section class="productos d-flex flex-column justify-content-center gap-5" id="Productos">            
+            
+            <article class="productos__content row">   
+
+                <div class="productos__information col-12 col-md-6 d-flex flex-column justify-content-center gap-5 gap-md-2 mb-5">
+                    <h4 class="productos__title">DULCE DE LECHE TRADICIONAL</h4>
+                    <p class="productos__text">Elaboraci&oacute;n artesanal de principio a fin, con un sabor intenso, receta tradicional</p>
+                    <p class="productos__presentacion">Presentaci&oacute;n en frasco de vidrio de 580gr.</p>
+                    <a class="productos__link" href=""> + INFO</a>
+                </div>                                              
+
+                <picture class="productos__cover col-12 col-md-6">
+                    <img src="./img/Productos/Producto1.png" alt="Imagen pote de dulce de leche con alfajores de maicena">
+                </picture> 
+                
+            </article>
+            
+            <article class="productos__content row">   
+
+                <div class="productos__information col-12 col-md-6 d-flex flex-column justify-content-center gap-5 gap-md-2 mb-5">
+                    <h4 class="productos__title">DULCE DE LECHE SIN AZ&Uacute;CAR</h4>
+                    <p class="productos__text">Elaboraci&oacute;n artesanal para cuidar tu silueta sin renunciar a nada, endulzado con stevia.</p>
+                    <p class="productos__presentacion">Presentaci&oacute;n en frasco de vidrio de 580gr. y 280gr.</p>
+                    <a class="productos__link" href=""> + INFO</a>
+                </div>                                              
+
+                <picture class="productos__cover col-12 col-md-6">
+                    <img src="./img/Productos/Producto2A.png" alt="Imagen pote de dulce de leche sin azucar">
+                </picture> 
+                
+            </article>
+            
+            <article class="productos__content row">   
+
+                <div class="productos__information col-12 col-md-6 d-flex flex-column justify-content-center gap-5 gap-md-2 mb-5">
+                    <h4 class="productos__title">DULCE DE LECHE CHOCONUTT</h4>
+                    <p class="productos__text">Elaboraci&oacute;n artesanal para el capricho dulce, combinaci&oacute; de dulce de leche, chocolate y pasta de avellanas. Una delicia &uacute;nica</p>
+                    <p class="productos__presentacion">Presentaci&oacute;n en frasco de vidrio de 280gr.</p>
+                    <a class="productos__link" href=""> + INFO</a>
+                </div>                                              
+
+                <picture class="productos__cover col-12 col-md-6">
+                    <img src="./img/Productos/Producto3.png" alt="Imagen pote de dulce de leche choconutt dos potes y una cuchara colmada del dulce de leche">
+                </picture> 
+                
+            </article>
+
+            <article class="productos__content productos__content__destacado row">   
+
+                <div class="productos__information col-12 col-md-6 d-flex flex-column justify-content-center gap-5 gap-md-2 mb-5">
+                    <h4 class="productos__title">ALFAJORES DE MAICENAT</h4>
+                    <p class="productos__text">Alfajores de dulce de coco rallado, relleno con 2cm de pura dulzura. Pudiendo elegir entre dulce de leche tradicional, light, o choconutt.</p>
+                    <p class="productos__presentacion">Presentaci&oacute;n en caja de 6 y 12 alfajores.</p>
+                    <a class="productos__link" href=""> + INFO</a>
+                </div>                                              
+
+                <picture class="productos__cover productos__coverDestacado col-12 col-md-6 d-flex justify-content-center p-5">
+                    <img src="./img/Productos/Producto4b.png" alt="Imagen pote de dulce de leche choconutt dos potes y una cuchara colmada del dulce de leche">
+                </picture> 
+                
+            </article>
+
+        </section>
+
+        <section class="calidad">            
             <p class="main-container__titulo">
-                Productos
+                La mejor calidad para vos
             </p>
-        </div>
 
-        <section class="collection container">
-            <article class="collection__content">
-                <h4 class="collection__title">DULCE DE LECHE TRADICIONAL</h4>
-                <p class="collection__text">Elaboraci&oacute;n artesanal de principio a fin, con un sabor intenso, receta tradicional</p>
-                <p class="collection__presentacion">Presentaci&oacute;n en frasco de vidrio de 580gr.</p>
-                <a class="collection__link" href=""> + INFO</a>
-            </article>
-            <picture class="collection__cover">
-                <img src="./img/Productos/Producto1.png" alt="Imagen pote de dulce de leche con alfajores de maicena">
-            </picture>
-        </section>
+            <article class="row d-flex justify-content-center gap-5">
+                <div class="col-12 col-md-1 d-flex justify-content-center">
+                    <picture><img src="./img/Productos/calidad1.png" alt="Imagen mejor calidad, 100% org&aacute;nico"></picture>
+                </div>
+                <div class="col-12 col-md-1 d-flex justify-content-center">
+                    <picture><img src="./img/Productos/calidad2.png" alt="Imagen mejor calidad, sin TACC"></picture>
+                </div>
+                <div class="col-12 col-md-1 d-flex justify-content-center">
+                    <picture><img src="./img/Productos/calidad3.png" alt="Imagen mejor calidad, sin conservantes"></picture>
+                </div>
+            </article>            
+        </section>            
+        
+        <section class="contactos d-flex flex-column justify-content-center mt-5" id="Contactos">
+            <p class="main-container__titulo">
+                Conct&aacute;ctanos
+            </p>
 
-        <section class="collection container">
-            <article class="collection__content">
-                <h4 class="collection__title">DULCE DE LECHE SIN AZ&Uacute;CAR</h4>
-                <p class="collection__text">Elaboraci&oacute;n artesanal para cuidar tu silueta sin renunciar a nada, endulzado con stevia.</p>
-                <p class="collection__presentacion">Presentaci&oacute;n en frasco de vidrio de 580gr. y 280gr.</p>
-                <a class="collection__link" href=""> + INFO</a>
-            </article>
-            <picture class="collection__cover">
-                <img src="./img/Productos/Producto2A.png" alt="Imagen pote de dulce de leche sin azucar">
-            </picture>
-        </section>
+            <div class="row">
+                <picture class="contactos__cover col-12 col-md-6 d-flex justify-content-center">
+                    <img src="./img/Productos/Producto6.png" alt="Imagen pote de dulce de leche, alfajores de maicena y cuchara colmada de dulce de leche">
+                </picture>  
 
-        <section class="collection container">
-            <article class="collection__content">
-                <h4 class="collection__title">DULCE DE LECHE CHOCONUTT</h4>
-                <p class="collection__text">Elaboraci&oacute;n artesanal para el capricho dulce, combinaci&oacute; de dulce de leche, chocolate y pasta de avellanas. Una delicia &uacute;nica</p>
-                <p class="collection__presentacion">Presentaci&oacute;n en frasco de vidrio de 280gr.</p>
-                <a class="collection__link" href=""> + INFO</a>
-            </article>
-            <picture class="collection__cover">
-                <img src="./img/Productos/Producto3.png" alt="Imagen pote de dulce de leche choconutt dos potes y una cuchara colmada del dulce de leche">
-            </picture>
-        </section>
-
-        <section>
-            <article>
-                <h4>ALFAJORES DE MAICENA</h4>
-                <p>Alfajores de dulce de coco rallado, relleno con 2cm de pura dulzura. Pudiendo elegir entre dulce de leche tradicional, light, o choconutt.</p>
-                <p>Presentaci&oacute;n en caja de 6 y 12 alfajores.</p>
-                <a href=""> + INFO</a>
-            </article>
-        </section>
-
-        <section>
-            <article>
-                <h4>La mejor calidad para vos</h4>                
-                <picture>
-                    <img src="./img/Productos/PropiedadesDeLosProductosHumaya.png" alt="Imagen con tres propiedades sobre los productos Humaya, Organico, sin TACC y sin Concervantes">                
-                </picture>
-            </article>
-        </section>
-
-        <section>
-            <h3>CONT&Aacute;CTANOS</h3>
-            <picture>
-                <img src="./img/Productos/Producto6.png" alt="Alfojores maicena, cuchara colmada y pote de dulce de leche humaya">
-            </picture>
-            <article>
-                <p>D&eacute;janos tu consulta y nuestro personal se pondr&aacute; en contacto a la brevedad:</p>
-                <form action="">
-                    <label for="idNombre">NOMBRE</label>
-                    <input type="text" name="nombre" id="idNombre">
-
-                    <label for="idEmail">E-MAIL:</label>
-                    <input type="email" name="email" id="idEmail">
-
-                    <label for="idConsulta">CONSULTA</label>    
-                    <textarea name="consulta" id="idConsulta" cols="30" rows="10"></textarea>
-                </form>
-            </article>
-        </section>
-
-        <section>
-            <h3>RECETAS</h3>
-            <ul>
-                <li>
-                    <article>
-                        <picture>
-                            <img src="./img/Productos/conitos.png" alt="Conitos de dulce de leche">
-                        </picture>
-                        <div>
-                            <h4>CONITOS</h4>
-                            <p>Una deliciosa opci&oacute;n para acompañar las meriendas, ese antojo de media noche o compartir con amigos</p>
-                            <a href="#"> PREPARACION </a>
+                <div class="contactos__formulario col-12 col-md-6 d-flex flex-column justify-content-around">
+                    <p class="contactos__headerForm">
+                        D&eacute;janos tu consulta y nuestro personal se pondr&aacute; en conctacto a la brevedad:
+                    </p>
+                    <form>    
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">NOMBRE</label>
+                            <input type="text" class="form-control" id="text" placeholder="Juan Perez">
                         </div>
-                    </article>
-                </li>                
-                <li>
-                    <article>
-                        <picture>
-                            <img src="./img/Productos/pepas.png" alt="Pepas con dulce de leche">
-                        </picture>
-                        <div>
-                            <h4>PEPAS</h4>
-                            <p>Las galletitas m&acute;s tiernas y ricas, rellenas de dulce de leche, ideales para el mate y la hora del t&eacute;</p>
-                            <a href="#"> PREPARACION </a>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-MAIL</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
                         </div>
-                    </article>
-                </li>                
-                <li>
-                    <article>
-                        <picture>
-                            <img src="./img/Productos/tortaCoconutt.png" alt="Torta Nutt">
-                        </picture>
-                        <div>
-                            <h4>TORTA NUTT</h4>
-                            <p>La torta de tres capas m&acute;s sabores del mundo, combina una base de vainilla, ducle de leche y cubierta de choconutt</p>
-                            <a href="#"> PREPARACION </a>
+                        <div class="mb-3">
+                            <label for="consulta" class="form-label">CONSULTA</label>
+                            <textarea class="form-control" id="consulta" rows="3"></textarea>
                         </div>
-                    </article>
-                </li>                
-            </ul>
-        </section>
 
-        <section>
-            <h3>CONTACTOS</h3>
-            <ul>
-                <li>
-                    <picture>
-                        <img src="./img/Logo/LogoHumaya100x100.png" alt="Isologo humaya">
-                    </picture>
-                </li>
-                <li>
-                    <h4>MEN&Uacute;</h4>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="">Home</a>
-                            </li>
-                            <li>
-                                <a href="">Productos</a>
-                            </li>
-                            <li>
-                                <a href="">Locales</a>
-                            </li>
-                            <li>
-                                <a href="">Contactos</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    
-                </li>
-
-                <li>
-                    <h4>NAVEGACI&Oacute;N</h4>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="">Preguntas Frecuentes</a>
-                            </li>
-                            <li>
-                                <a href="">Distribuidores</a>
-                            </li>
-                            <li>
-                                <a href="">Prensa</a>
-                            </li>
-                            <li>
-                                <a href="">Recetas exclusivas</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    
-                </li>
-
-                <li>
-                    <h4>REDES</h4>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#"><iconify-icon icon="mdi:instagram" style="color: white;"></iconify-icon></a>
-                            </li>
-                            <li>
-                                <a href="#"><iconify-icon icon="ant-design:facebook-outlined" style="color: white;"></iconify-icon></a>
-                            </li>
-                            <li>
-                                <a href="#"><iconify-icon icon="iconoir:tiktok" style="color: white;"></iconify-icon></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </li>
-                <li>
-                    <h4>UBICACI&Oacute;N</h4>
-                    <p>Monte de Oca 2356, CABA</p>
-                    <img src="./img/mapa/ubicacion.png" alt="Ubicacion de humaya en un mapa">
-                </li>
-            </ul>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="contactos__btn">
+                                Enviar
+                            </button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>Maquetado web - Craviotto Mart&iacute;n</p>
-    </footer>
- 
-    
+
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
