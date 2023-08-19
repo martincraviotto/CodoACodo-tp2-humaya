@@ -1,0 +1,17 @@
+
+.main-container{
+    background-color: var(--secondary-bg-solid);
+}
+
+.main-container__contentTitulo{
+
+}
+
+
+.main-container__titulo{
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 900;
+    color: var(--light-font-solid);
+    text-align: center; 
+}
