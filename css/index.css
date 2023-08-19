@@ -3,7 +3,7 @@
 :root{
     /*Palette*/
     --primary-solid: #a18d6e;
-    --primary-900: rgba(161, 141, 110,0.9);
+    --primary-900: rgba(161, 141, 110, 0.9);
     --primary-500: rgba(161, 141, 110,0.5);
     --primary-300: rgba(161, 141, 110,0.3);
     --primary-100: rgba(161, 141, 110, 0.205);
@@ -42,5 +42,16 @@
     --spacing-16:   1.6rem;
     --spacing-12:   1.2rem;
     --spacing-8 :   0.8rem;
+}
+
+ul,ol {
+    list-style-type: none;  
+    padding-left: 0;  
+}
+
+a {
+    text-decoration: none;    
+    font-family: inherit;
+    color : inherit;
 }
 

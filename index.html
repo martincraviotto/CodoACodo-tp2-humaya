@@ -11,6 +11,8 @@
     <link href="./css/main.css" rel="stylesheet">
     <link href="./css/productos.css" rel="stylesheet">
     <link href="./css/conctactos.css" rel="stylesheet">
+    <link href="./css/recetas.css" rel="stylesheet">
+    <link href="./css/encontranosEn.css" rel="stylesheet">
 
     <title>Humaya</title>
 </head>
@@ -36,7 +38,7 @@
                         <div class="navbar-nav">
                             <a class="nav-link navbar__link" aria-current="page" href="./index.html">Home</a>
                             <a class="nav-link navbar__link" href="#Productos">Productos</a>
-                            <a class="nav-link navbar__link" href="#Locales">Locales</a>
+                            <a class="nav-link navbar__link" href="#EncontranosEn">Locales</a>
                             <a class="nav-link navbar__link" href="#Contactos">Contactos</a>                  
                         </div>
                     </div>
@@ -150,24 +152,25 @@
             </p>
 
             <div class="row">
+
                 <picture class="contactos__cover col-12 col-md-6 d-flex justify-content-center">
                     <img src="./img/Productos/Producto6.png" alt="Imagen pote de dulce de leche, alfajores de maicena y cuchara colmada de dulce de leche">
                 </picture>  
 
-                <div class="contactos__formulario col-12 col-md-6 d-flex flex-column justify-content-around">
+                <div class="contactos__formulario col-12 col-md-6 d-flex flex-column justify-content-evenly">
                     <p class="contactos__headerForm">
                         D&eacute;janos tu consulta y nuestro personal se pondr&aacute; en conctacto a la brevedad:
                     </p>
                     <form>    
-                        <div class="mb-3">
+                        <div class="mb-2">
                             <label for="nombre" class="form-label">NOMBRE</label>
                             <input type="text" class="form-control" id="text" placeholder="Juan Perez">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-2">
                             <label for="email" class="form-label">E-MAIL</label>
                             <input type="email" class="form-control" id="email" placeholder="name@example.com">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-2">
                             <label for="consulta" class="form-label">CONSULTA</label>
                             <textarea class="form-control" id="consulta" rows="3"></textarea>
                         </div>
@@ -181,6 +184,147 @@
                     </form>
                 </div>
             </div>
+        </section>
+
+        <section class="recetas m-5" id="recetas">
+
+            <p class="main-container__titulo">
+                Recetas
+            </p>            
+
+            <div class="row d-flex justify-content-evenly">
+                
+                <div class="recetas__card card col-12 col-md-3">
+                    <picture class="recetas__cover col-12"> 
+                        <img src="./img/Productos/conitos.png" class="card-img-top" alt="Conitas rellenos de dulce de leche">
+                    </picture>                     
+
+                    <div class="recetas__cardBody card-body d-flex flex-column justify-content-evenly align-items-center">
+                      <h5 class="recetas__cardTitle card-title">CONITOS</h5>
+                      <p class="recetas__cardText card-text">Una deliciosa opci&oacute; para acompañar las meriendas, ese antojo de media noche o compartir con amigos</p>
+                      <a href="#" class="recetas__link" > PREPARACI&Oacute;N</a>
+                    </div>
+                </div>
+
+                <div class="recetas__card card col-12 col-md-3">
+                    <picture class="recetas__cover col-12"> 
+                        <img src="./img/Productos/pepas.png" class="card-img-top" alt="Conitas rellenos de dulce de leche">
+                    </picture>                     
+
+                    <div class="recetas__cardBody card-body d-flex flex-column justify-content-evenly align-items-center">
+                      <h5 class="recetas__cardTitle card-title">PEPAS</h5>
+                      <p class="recetas__cardText card-text">Las galletitas m&aacute;s tiernas y ricas, rellenas de dulce de leche, ideales para el mate  y la hora del t&eacute;</p>
+                      <a href="#" class="recetas__link" > PREPARACI&Oacute;N</a>
+                    </div>
+                </div>
+
+                <div class="recetas__card card col-12 col-md-3">
+                    <picture class="recetas__cover col-12"> 
+                        <img src="./img/Productos/tortaCoconutt.png" class="card-img-top" alt="Conitas rellenos de dulce de leche">
+                    </picture>                     
+
+                    <div class="recetas__cardBody card-body d-flex flex-column justify-content-evenly align-items-center">
+                      <h5 class="recetas__cardTitle card-title">TORTA NUTT</h5>
+                      <p class="recetas__cardText card-text">La torta de tres capas m&aacute;s sabrosa del mundo, combian una base de vainilla, dulce de leche y cuberita de chocnutt.</p>
+                      <a href="#" class="recetas__link" > PREPARACI&Oacute;N</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="EncontranosEn mt-5">
+            <p class="main-container__titulo">
+                Encontranos en:
+            </p>  
+
+            <div class="EncontranosEn__container row d-flex justify-content-evenly">
+
+                <div class="EncontranosEn__logo d-none d-md-block col-md-2">
+                    <picture class="EncontranosEn__cover col-12 d-flex p-5"> 
+                        <img src="./img/Logo/LogoHumaya100x100.png" alt="isologotipo de la marca Humaya">
+                    </picture> 
+                </div>
+
+                <div class="EncontranosEn__menu d-none d-md-block col-md-2">
+                    <p class="EncontranosEn__titulo">MEN&Uacute;</p>
+
+                    <ul class="d-flex flex-column justify-content-between">
+                        <li>
+                            <a class="EncontranosEn__link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a class="EncontranosEn__link" href="#Productos">Productos</a>
+                        </li>
+
+                        <li>
+                            <a class="EncontranosEn__link" href="#EncontranosEn">Locales</a>
+                        </li>
+
+                        <li>
+                            <a class="EncontranosEn__link" href="#Contactos">Contactos</a>                  
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="EncontranosEn__navegacion col-12 col-md-2">
+                    <p class="EncontranosEn__titulo">NAVEGACI&Oacute;N</p>
+                    <ul class="d-flex flex-column justify-content-between">
+                        <li>
+                            <a class="EncontranosEn__link" aria-current="page" href="#">Preguntas frecuentes</a>
+                        </li>
+
+                        <li>
+                            <a class="EncontranosEn__link" href="#">Distribuidores</a>
+                        </li>
+
+                        <li>
+                            <a class="EncontranosEn__link" href="#">Prensa</a>
+                        </li>
+
+                        <li>
+                            <a class="EncontranosEn__link" href="#">Recetas exclusivas</a>                  
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="EncontranosEn__redes col-12 col-md-2">
+                    <p class="EncontranosEn__titulo">REDES</p>
+                    <ul class="d-flex flex-column justify-content-between">
+                        <li>
+                            <a class="navbar__link" href="#">
+                                <iconify-icon icon="ri:instagram-line" style="color: rgba(161, 141, 110, 0.9);" width="30"></iconify-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navbar__link" href="#">
+                                <iconify-icon icon="ant-design:facebook-outlined" style="color: rgba(161, 141, 110, 0.9);" width="30"></iconify-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navbar__link" href="#">
+                                <iconify-icon icon="iconoir:tiktok" style="color: rgba(161, 141, 110, 0.9);" width="30"></iconify-icon>
+                            </a>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+
+                <div class="EncontranosEn__ubicacion col-12 col-md-2">
+                    <p class="EncontranosEn__titulo">UBICACI&Oacute;N</p>
+                    <p class="EncontranosEn__direccion">Monte de Oca 2356, CABA</p>
+                    <picture class="EncontranosEn__ubicacionCover col-12"> 
+                        <img src="./img/mapa/ubicacion.png" alt="ubicacion en el mapa">
+                    </picture>
+                </div>
+
+            </div>
+
         </section>
 
     </main>

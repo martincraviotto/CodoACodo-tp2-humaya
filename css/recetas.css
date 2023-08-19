@@ -1,0 +1,42 @@
+
+
+.recetas .recetas__card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.recetas .recetas__cardBody{
+    background-color: rgb(207, 187, 157);
+}
+
+.recetas .recetas__cardTitle{   
+    font-size: var(--font-large);
+    font-weight: 500;
+    color:var(--primary-solid);
+    text-align: center;
+}
+
+.recetas .recetas__cardText{  
+    font-size: var(--font-medium);
+    font-weight: 300;
+    color:var(--light-font-solid);
+}
+
+.recetas .recetas__link{
+    display: inline-block;/*por default tiene inline y no toma entonces los padding y margins*/
+    font-size: var(--font-medium);
+    font-weight: 500;
+    background-color: var(--dark-bg-solid);
+    color: var(--primary-solid);
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--primary-solid);
+    padding: var(--spacing-12) var(--spacing-68);
+    text-align: center;   
+    transition: all .3s ease-in-out;
+}
+
+.recetas .recetas__link:hover{    
+    background-color: var(--primary-900);
+    color: var(--dark-font-solid);
+}

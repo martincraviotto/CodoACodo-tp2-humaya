@@ -66,7 +66,6 @@
 
 
 .productos__content.productos__content__destacado{
-    /* background-color: var(--primary-100); */
      background-color: rgb(207, 187, 157)
 }
 
@@ -75,7 +74,6 @@
     height: auto;
     /* object-fit: cover; */
     object-position: center;
-
 }
 
 

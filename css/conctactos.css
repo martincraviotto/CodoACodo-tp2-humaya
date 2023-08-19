@@ -7,7 +7,7 @@
 
 .contactos__formulario{    
     padding: 0 var(--spacing-128);    
-}
+} 
 
 .contactos__headerForm{
     font-weight: 500;
@@ -51,3 +51,13 @@
 .contactos__formulario input, .contactos__formulario textarea{
     background-color: var(--primary-900);
 }
+
+
+
+
+
+/* @media screen and (max-width:768px) {
+    .contactos__formulario{    
+        padding: var(--spacing-8);    
+    }
+}     */
