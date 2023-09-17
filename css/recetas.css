@@ -40,3 +40,15 @@
     background-color: var(--primary-900);
     color: var(--dark-font-solid);
 }
+
+.img-normalizada{
+	width: 500px;
+	height: 500px;
+	object-fit: cover;
+}
+
+.recetas .text{  
+    font-size: var(--font-medium);
+    font-weight: 300;
+    color:var(--light-font-solid);
+}
